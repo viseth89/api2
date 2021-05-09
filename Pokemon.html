@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5502/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link href="./Pokemon_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Pokemon_files/style.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="main">
+
+
+    </div>
+
+    <div class="pokemon">
+        <div class="row" style="text-align:center;">
+
+            <div class="col-sm-4">
+
+                <form action="http://127.0.0.1:5502/index.html">
+                    <input type="text" placeholder="Search">
+                    <input type="submit" value="Search">
+                </form>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Pokemon_files/4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        charmander
+
+                        <div class="card-header">
+                            Stats :
+                        </div>
+                        <ul class="list-group list-group-flush" id="film-list-1">
+
+                        <li class="list-group-item">hp 39</li><li class="list-group-item">attack 52</li><li class="list-group-item">defense 43</li><li class="list-group-item">special-attack 60</li><li class="list-group-item">special-defense 50</li><li class="list-group-item">speed 65</li></ul>
+                        <div class="card-footer">
+                            Card footer
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+
+            </div>
+
+            <div class="col-sm-4">
+
+                <form action="http://127.0.0.1:5502/index.html">
+                    <input type="text" placeholder="Search">
+                    <input type="submit" value="Search">
+                </form>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Pokemon_files/25.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        pikachu
+
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p> -->
+
+                        <div class="card-header">
+                            Stats :
+                        </div>
+                        <ul class="list-group list-group-flush" id="film-list">
+
+                        <li class="list-group-item">hp 35</li><li class="list-group-item">attack 55</li><li class="list-group-item">defense 40</li><li class="list-group-item">special-attack 50</li><li class="list-group-item">special-defense 50</li><li class="list-group-item">speed 90</li></ul>
+                        <div class="card-footer">
+                            Card footer
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./Pokemon_files/script3.js"></script>
+    <script src="./Pokemon_files/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
